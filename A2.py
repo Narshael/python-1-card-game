@@ -78,13 +78,13 @@ def game_loop(p1_deck, p2_deck):
                 p2_deck.extend(p1_fd)
                 print(f"Player 2 append{p1_cards}{p2_cards} and extend{p2_fd}{p1_fd}")
                 
-            end_game(p1_deck, p2_deck)
+        end_game(p1_cards, p2_cards)
 
 
-def end_game(p1_deck, p2_deck):
-    if len(p1_deck) == 0:
+def end_game(p1_cards, p2_cards):
+    if len(p1_cards) == 0:
         print(f"GAME OVER!!! PLAYER 2 HAS WON!!")
-    elif len(p2_deck) == 0:
+    elif len(p2_cards) == 0:
         print(f"GAME OVER !!! PLAYER 1 HAS WON!!")
 
 
